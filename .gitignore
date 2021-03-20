@@ -1,4 +1,5 @@
 .idea/
+examples/
 target/
 
 Cargo.lock
