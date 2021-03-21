@@ -11,7 +11,7 @@ pub fn is_git_repo(repo: &str) -> bool {
 
 pub fn ignore_f(repo: &str, file: &str) {
     if is_git_repo(repo) != true {
-        println!("{} is not a git repository", repo);
+        red_ln!("{} is not a git repository", repo);
         exit(0);
     }
     let mut ignore_file = File::open(format_args!("{}{}", repo, "/.gitignore").to_string().as_str()).unwrap();
@@ -19,7 +19,7 @@ pub fn ignore_f(repo: &str, file: &str) {
 }
 pub fn ignore_d(repo: &str, dir: &str) {
     if is_git_repo(repo) != true {
-        println!("{} is not a git repository", repo);
+        red_ln!("{} is not a git repository", repo);
         exit(0);
     }
     let mut ignore_file = File::open(format_args!("{}{}", repo, "/.gitignore").to_string().as_str()).unwrap();

@@ -15,7 +15,7 @@ impl GitCommands {
 
     pub fn checkout_b(repo: &str, branch: &str) {
         if is_git_repo(repo) != true {
-            println!("{} is not a git repository", repo);
+            red_ln!("{} is not a git repository", repo);
             exit(0);
         }
         Command::new("git")
@@ -26,7 +26,7 @@ impl GitCommands {
 
     pub fn checkout_t(repo: &str, tag: &str) {
         if is_git_repo(repo) != true {
-            println!("{} is not a git repository", repo);
+            red_ln!("{} is not a git repository", repo);
             exit(0);
         }
         Command::new("git")
@@ -37,7 +37,7 @@ impl GitCommands {
 
     pub fn checkout_nb(repo: &str, branch: &str) {
         if is_git_repo(repo) != true {
-            println!("{} is not a git repository", repo);
+            red_ln!("{} is not a git repository", repo);
             exit(0);
         }
         Command::new("git")
@@ -54,7 +54,7 @@ impl GitCommands {
             .spawn();
     }
 
-    pub fn commit(&mut self message: &str) {
+    pub fn commit(&mut self, message: &str) {
         Command::new("git")
             .arg("commit")
             .arg("-m")
