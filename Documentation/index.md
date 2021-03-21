@@ -1,6 +1,6 @@
 ## Index
 
-Index of Git Management Rs 0.1.0 documentation
+Index of Git Management Rs 0.1.1 documentation
 
 ``buildscript.md`` Using Git Rs in a build script (example)
 

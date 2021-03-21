@@ -1,6 +1,6 @@
 [package]
 name = "git_management"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["NathanMcMillan54 <nathanmcmillan54@gmail.com>"]
 edition = "2018"
 readme = "README.md"

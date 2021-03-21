@@ -9,7 +9,7 @@ impl GitCommands {
     pub fn clone(website: &str, author: &str, repo: &str) {
         Command::new("git")
             .arg("clone")
-            .arg(format_args!("{}{}{}", website, author, repo).to_string().as_str())
+            .arg(format_args!("{}{}{}{}", website, author, "/", repo).to_string().as_str())
             .spawn();
     }
 
