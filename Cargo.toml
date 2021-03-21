@@ -5,7 +5,7 @@ authors = ["NathanMcMillan54 <nathanmcmillan54@gmail.com>"]
 edition = "2018"
 readme = "README.md"
 description = "A library for managing git repositroies"
-documentation = "Documentation/"
+documentation = "https://github.com/NathanMcMillan54/git_rs/tree/master/Documentation"
 license = "MIT"
 
 [dependencies]
